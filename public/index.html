@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <script type="text/javascript">
+    function killCopy(e) {
+      return false 
+    }
+    function reEnable(){
+      return true 
+    }
+    document.onselectstart=new Function("return false") 
+    if(window.sidebar){
+      document.onmousedown = killCopy
+      document.onclick = reEnable
+    }
+  </script>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
