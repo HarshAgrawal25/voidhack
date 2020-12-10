@@ -5,6 +5,8 @@ import Main from './components/Main';
 import Question from './components/Question';
 import Timmer from './components/Timmer';
 import Test from './components/Test';
+import InFaculty from './components/InFaculty';
+import FaDetails from './components/FaDetails';
 
 export class App extends Component {
   state = {
@@ -22,8 +24,10 @@ export class App extends Component {
     return (
       <div>
         <Main data={this.state.landingPageData.Header} />
-        <Question />
-        <Test />
+        {/* <Question />
+        <Test /> */}
+        <InFaculty />
+        <FaDetails />
       </div>
     )
   }
